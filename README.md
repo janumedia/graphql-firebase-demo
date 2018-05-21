@@ -4,9 +4,10 @@ This repo provide an example to integrate GraphQL and Firebase
 
 # Depedencies
 
-Since this demo is using Express as Node HTTP server to minimize setup, open package.json for more info about libraries use in this repo.
+To simplify this demo is using `express-graphql` as Node HTTP server. 
+Other depedencies use in this demo is available in `package.json` file.
 
-To help development process this repo using `nodemon` to monitor any node change so you will no need to restart the server everytime update the scripts
+To help development process this repo using `nodemon` to monitor any node change so you will no need to restart the server everytime update the scripts.
 
 # Note
 
