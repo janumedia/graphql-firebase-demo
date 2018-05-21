@@ -17,6 +17,8 @@ Be sure to manage your [Firebase database rules](https://firebase.google.com/doc
 
 # Example query
 
+Open `http://localhost:4000/graphql` on your browser and paste the following queries to test:
+
 Query to addAuthor and return the author's id and name:
 
 ```js
