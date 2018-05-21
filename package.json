@@ -1,0 +1,25 @@
+{
+  "name": "graphql-firebase-demo",
+  "version": "0.0.1",
+  "description": "GraphQL + Firebase Demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server"
+  },
+  "author": "I Nengah Januartha",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janumedia/graphql-firebase-demo.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "firebase-admin": "^5.12.1",
+    "graphql": "^0.13.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  }
+}
