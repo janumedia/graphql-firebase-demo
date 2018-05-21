@@ -11,6 +11,68 @@ To help development process this repo using `nodemon` to monitor any node change
 
 # Note
 
-To integrate with Firebase this repo using [firebase-admin](https://www.npmjs.com/package/firebase-admin), make sure to read the how to generate [Firebase Admin Private Key](https://firebase.google.com/docs/admin/setup#initialize_the_sdk) as you will need to generate your own `serviceAccountKey.json`
+To integrate with Firebase this repo using [firebase-admin](https://www.npmjs.com/package/firebase-admin), make sure to read how to generate [Firebase Admin Private Key](https://firebase.google.com/docs/admin/setup#initialize_the_sdk) as you will need to generate your own `serviceAccountKey.json` and save it on the root project directory
 
 Be sure to manage your [Firebase database rules](https://firebase.google.com/docs/database/security/quickstart) to make it work
+
+# Example query
+
+Query to addAuthor and return the author's id and name:
+
+```js
+
+mutation {
+  addAuthor(name: "Stephen Edwin King") {
+    id
+    name
+  }
+}
+
+```
+
+Query to addBook and return the book's id, title and author's name:
+
+```js
+
+mutation {
+  addBook(title:"Dreamcatcher", authorid:"888")
+  {
+    id
+    title
+    author {
+      name
+    }
+  }
+}
+
+```
+
+Query to get book by ID including author name:
+
+```js
+
+{
+  book(id:"888"){
+    title
+    author{
+      name
+    }
+  }
+}
+
+```
+
+Query to get all authors and their books
+
+```js
+
+{
+  authors{
+    name
+    books {
+      title
+    }
+  }
+}
+
+```
