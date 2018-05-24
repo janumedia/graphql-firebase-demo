@@ -5,7 +5,7 @@ const serviceAccount = require("../serviceAccountKey.json");
 
 firebaseAdmin.apps.length ? "" : firebaseAdmin.initializeApp({
     credential: firebaseAdmin.credential.cert(serviceAccount),
-    databaseURL: "https://meetup-app-demo.firebaseio.com"
+    databaseURL: "https://<DATABASE_NAME>.firebaseio.com"
 });
 
 module.exports = {
